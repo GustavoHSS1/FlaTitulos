@@ -11,3 +11,12 @@ Atualmente, o usuário encontra dificuldades em visualizar de forma centralizada
 
 4. Critério de Sucesso
 O usuário consegue filtrar e visualizar os detalhes de qualquer título histórico do clube em menos de três interações na tela.
+
+## Arquitetura do Projeto
+
+O projeto segue a metodologia ITCSS para organização dos arquivos CSS, separando estilos em camadas:
+- Settings
+- Base
+- Layout
+- Components
+- Utilities
