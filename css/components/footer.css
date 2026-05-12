@@ -24,3 +24,8 @@ footer a:hover {
     color: #ffed4e;
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    footer {
+        padding: 25px 15px;
+        margin-top: 40px;

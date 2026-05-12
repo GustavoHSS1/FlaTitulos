@@ -9,11 +9,13 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/layout.css">
 
+
         <link rel="stylesheet" href="css/components/navbar.css">
         <link rel="stylesheet" href="css/components/hero.css">
         <link rel="stylesheet" href="css/components/card.css">
         <link rel="stylesheet" href="css/components/footer.css">
         <link rel="stylesheet" href="css/components/btn.css">
+
 
         <link rel="stylesheet" href="css/utilities.css">
 </head>
@@ -22,21 +24,27 @@
         <h1>Flamengo - Campeão dos Campeões</h1>
         <p>O clube mais querido do Brasil, com uma história repleta de glórias e títulos.</p>
     </header>
-    
+   
     <nav>
-        <ul>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Abrir menu de navegação" aria-controls="menu-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul id="menu-links" class="menu-links">
             <li><a href="#titulos">Títulos</a></li>
             <li><a href="#historia">História</a></li>
             <li><a href="#jogadores">Jogadores</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-    
+   
     <main>
         <section id="titulos">
             <h2>Títulos do Flamengo</h2>
             <p>O Flamengo possui uma vasta coleção de títulos, sendo um dos clubes mais vitoriosos do futebol brasileiro e sul-americano.</p>
             <ul class="titulos-lista">
+
 
                 <li class="titulo-item">
                     <div class="titulo-imagens">
@@ -46,6 +54,7 @@
                     <span class="titulo-texto"><strong>Copa do Brasil:</strong> 1990</span>
                 </li>
 
+
                 <li class="titulo-item">
                     <div class="titulo-imagens">
                         <img class="titulo-principal" src="assets/img/copaDoBrasil2006/copadobrasil2006.png" alt="Troféu Copa do Brasil 2006">
@@ -53,6 +62,7 @@
                     </div>
                     <span class="titulo-texto"><strong>Copa do Brasil:</strong> 2006</span>
                 </li>
+
 
                 <li class="titulo-item">
                     <div class="titulo-imagens">
@@ -62,6 +72,7 @@
                     <span class="titulo-texto"><strong>Copa Libertadores:</strong> 1981</span>
                 </li>
 
+
                 <li class="titulo-item">
                     <div class="titulo-imagens">
                         <img class="titulo-principal" src="assets/img/libertadores2019/libertadores2019.png" alt="Troféu Copa Libertadores 2019">
@@ -69,6 +80,7 @@
                     </div>
                     <span class="titulo-texto"><strong>Copa Libertadores:</strong> 2019</span>
                 </li>
+
 
                 <li class="titulo-item">
                     <div class="titulo-imagens">
@@ -78,6 +90,7 @@
                     <span class="titulo-texto"><strong>Campeonato Brasileiro:</strong> 2019</span>
                 </li>
 
+
                 <li class="titulo-item">
                     <div class="titulo-imagens">
                         <img class="titulo-principal" src="assets/img/carioca2019/carioca2019.png" alt="Troféu Campeonato Carioca 2019">
@@ -85,6 +98,7 @@
                     </div>
                     <span class="titulo-texto"><strong>Campeonato Carioca:</strong> 2019</span>
                 </li>
+
 
                 <li class="titulo-item">
                     <div class="titulo-imagens">
@@ -94,6 +108,7 @@
                     <span class="titulo-texto"><strong>Copa do Brasil:</strong> 2022</span>
                 </li>
 
+
                 <li class="titulo-item">
                     <div class="titulo-imagens">
                         <img class="titulo-principal" src="assets/img/libertadores2022/libertadores2022.png" alt="Troféu Copa Libertadores 2022">
@@ -102,25 +117,29 @@
                     <span class="titulo-texto"><strong>Copa Libertadores:</strong> 2022</span>
                 </li>
 
+
             </ul>
         </section>
-        
+       
         <section id="historia">
             <h2>História do Clube</h2>
             <p>Fundado em 17 de novembro de 1895, o Clube de Regatas do Flamengo é um dos maiores clubes do Brasil, conhecido por sua paixão e conquistas.</p>
         </section>
-        
+       
         <section id="jogadores">
             <h2>Jogadores Icônicos</h2>
             <p>Jogadores lendários como Zico, Ronaldinho Gaúcho, Adriano e Gabigol marcaram a história do clube.</p>
         </section>
     </main>
-    
+   
     <footer>
         <p>&copy; 2023 Clube de Regatas do Flamengo. Todos os direitos reservados.</p>
         <address>
             Contato: <a href="mailto:contato@flamengo.com.br">contato@flamengo.com.br</a>
         </address>
     </footer>
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
