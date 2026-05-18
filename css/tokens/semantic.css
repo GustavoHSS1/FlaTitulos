@@ -1,0 +1,29 @@
+:root {
+    /* Tokens semânticos que conectam a intenção de uso ao sistema primitivo */
+    --color-background: var(--_color-white);
+    --color-surface: var(--_color-white);
+    --color-surface-muted: var(--_color-surface-muted);
+    --color-text-primary: var(--_color-text);
+    --color-text-secondary: var(--_color-text-muted);
+    --color-heading: var(--_color-brand);
+    --color-brand: var(--_color-brand);
+    --color-brand-dark: var(--_color-brand-dark);
+    --color-action: var(--_color-action);
+    --color-action-hover: var(--_color-action-hover);
+    --color-white-muted: var(--_color-white-muted);
+    --color-link: var(--_color-action);
+    --shadow-default: var(--_shadow-default);
+    --shadow-hover: var(--_shadow-hover);
+    --border-radius: var(--_radius-default);
+    --border-radius-card: var(--_radius-card);
+    --border-radius-small: var(--_radius-small);
+}
+
+html[data-theme="dark"] {
+    --color-background: #111827;
+    --color-surface: #1f2937;
+    --color-text-primary: var(--_color-white);
+    --color-text-secondary: #d1d5db;
+    --color-heading: var(--_color-action);
+    --color-brand-dark: var(--_color-white);
+}

@@ -1,0 +1,18 @@
+:root {
+    /* Cores primárias e neutras usadas pelo sistema visual */
+    --_color-brand: #c41e3a;
+    --_color-brand-dark: #000000;
+    --_color-white: #ffffff;
+    --_color-surface: #f5f5f5;
+    --_color-surface-muted: #e0e0e0;
+    --_color-text: #333333;
+    --_color-text-muted: #555555;
+    --_color-action: #ffd700;
+    --_color-action-hover: #ffed4e;
+    --_color-white-muted: rgba(255, 255, 255, 0.2);
+    --_shadow-default: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --_shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --_radius-default: 0.625rem;
+    --_radius-card: 0.875rem;
+    --_radius-small: 0.5rem;
+}

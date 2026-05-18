@@ -1,0 +1,20 @@
+/* Arquivo principal de importação de CSS.
+   Usamos importações diretas para compatibilidade garantida. */
+
+@import "./tokens/primitives.css";
+@import "./tokens/semantic.css";
+@import "./tokens/spacing.css";
+@import "./tokens/typography.css";
+
+@import "./reset.css";
+
+@import "./base.css";
+@import "./layout.css";
+
+@import "./variables.css";
+@import "./components/navbar.css";
+@import "./components/card.css";
+@import "./components/footer.css";
+@import "./components/btn.css";
+
+@import "./utilities.css";

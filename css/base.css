@@ -1,44 +1,39 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: var(--font-family-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
 }
-
 
 header {
-    background: linear-gradient(135deg, #c41e3a 0%, #000000 100%);
-    color: #fff;
-    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-dark) 100%);
+    color: var(--color-white);
+    padding: var(--space-10) var(--space-5);
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-default);
 }
 
-
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--space-3);
     text-transform: uppercase;
 }
 
-
 header p {
-    font-size: 1.1rem;
+    font-size: var(--font-size-sm);
     opacity: 0.95;
 }
 
-
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.8rem;
+        font-size: var(--font-size-3xl);
     }
-
 
     header p {
-        font-size: 0.9rem;
+        font-size: var(--font-size-xs);
     }
 
-
     header {
-        padding: 30px 15px;
+        padding: var(--space-8) var(--space-4);
     }
 }
