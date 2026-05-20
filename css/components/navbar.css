@@ -22,7 +22,7 @@ nav {
 .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: var(--color-white);
+    background-color: var(--_color-white);
     margin: var(--space-1) 0;
     display: block;
     transition: all 0.3s ease;
@@ -41,7 +41,7 @@ nav .menu-links li {
 
 nav .menu-links li a {
     display: block;
-    color: var(--color-white);
+    color: var(--_color-white);
     text-decoration: none;
     padding: var(--space-4) var(--space-6);
     transition: background-color 0.3s ease, color 0.3s ease;
