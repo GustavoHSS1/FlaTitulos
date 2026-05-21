@@ -1,5 +1,5 @@
 footer {
-    background: linear-gradient(135deg, var(--color-brand-dark) 0%, var(--color-brand) 100%);
+    background: linear-gradient(135deg, #1a0a0a 0%, #c41e3a 100%);
     color: var(--color-white);
     text-align: center;
     padding: var(--space-8) var(--space-5);
@@ -8,11 +8,11 @@ footer {
 
 footer p {
     margin-bottom: var(--space-3);
-    color: var(--_color-white);
+    color: var(--color-nav-text);
 }
 
 footer address {
-    color: var(--_color-white);
+    color: var(--color-nav-text);
     font-style: normal;
 }
 

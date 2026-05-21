@@ -17,13 +17,29 @@
     --border-radius: var(--_radius-default);
     --border-radius-card: var(--_radius-card);
     --border-radius-small: var(--_radius-small);
+
+    /*teste*/
+    --color-nav-icon: var(--color-white);
+    --color-nav-bg: #000000;      /* light mode — preto clássico */
+    --color-nav-text: var(--_color-white);
+    --color-nav-hover: #c41e3a;
+    --color-nav-border: #c41e3a;
 }
 
 html[data-theme="dark"] {
-    --color-background: #111827;
-    --color-surface: #1f2937;
+    --color-background: var(--_color-gray-900);
+    --color-surface: var(--_color-gray-800);
     --color-text-primary: var(--_color-white);
-    --color-text-secondary: #d1d5db;
+    --color-text-secondary: var(--_color-gray-300);
     --color-heading: var(--_color-action);
     --color-brand-dark: var(--_color-white);
+
+    /*teste*/
+    --color-nav-bg: #1a0a0a;
+    --color-nav-text: var(--_color-white);
+    --color-nav-hover: #c41e3a;
+    --color-nav-border: #c41e3a;
+
+    --color-header-bg-start: #1a0a0a;
+    --color-header-bg-end: #c41e3a;
 }

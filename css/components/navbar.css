@@ -1,5 +1,5 @@
 nav {
-    background-color: var(--color-brand-dark);
+    background-color: var(--color-nav-bg);
     padding: 0;
     position: sticky;
     top: 0;
@@ -22,7 +22,7 @@ nav {
 .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: var(--_color-white);
+    background-color: var(--color-nav-text);
     margin: var(--space-1) 0;
     display: block;
     transition: all 0.3s ease;
@@ -41,7 +41,7 @@ nav .menu-links li {
 
 nav .menu-links li a {
     display: block;
-    color: var(--_color-white);
+    color: var(--color-nav-text);
     text-decoration: none;
     padding: var(--space-4) var(--space-6);
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -50,8 +50,8 @@ nav .menu-links li a {
 }
 
 nav .menu-links li a:hover {
-    background-color: var(--color-brand);
-    border-bottom-color: var(--color-action);
+    background-color: var(--color-nav-hover);
+    border-bottom-color: var(--color-nav-border);
 }
 
 @media (max-width: 768px) {
@@ -69,7 +69,7 @@ nav .menu-links li a:hover {
         left: 0;
         right: 0;
         flex-direction: column;
-        background-color: var(--color-brand-dark);
+        background-color: var(--color-nav-bg, var(--color-brand-dark));
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;

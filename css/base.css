@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-dark) 100%);
+    background: linear-gradient(135deg, var(--color-header-bg-start, #1a0a0a) 0%, var(--color-header-bg-end, #c41e3a) 100%);
     color: var(--color-white);
     padding: var(--space-10) var(--space-5);
     text-align: center;
