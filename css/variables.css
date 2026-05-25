@@ -15,46 +15,98 @@
     cursor: pointer;
 }
 
-.titulo-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
-}
-
 .titulo-imagens {
     position: relative;
     width: 100%;
-    height: 200px;
     overflow: hidden;
     background-color: var(--color-surface-muted);
 }
 
 .titulo-imagens img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     display: block;
-    transition: opacity 0.3s ease;
 }
 
-.titulo-imagens .titulo-principal {
-    opacity: 1;
+/* ------------------------------------------------------------
+   DISPOSITIVOS COM MOUSE — comportamento de hover normal
+   @media (hover: hover) garante que só entra aqui quem tem
+   um ponteiro que realmente faz hover (mouse, trackpad).
+   Tablets e celulares ficam de fora.
+   ------------------------------------------------------------ */
+@media (hover: hover) {
+    .titulo-hover-label {
+        display: none;
+    }
+
+    .titulo-imagens {
+        height: 200px;
+    }
+
+    .titulo-imagens img {
+        height: 100%;
+        transition: opacity 0.3s ease;
+    }
+
+    .titulo-imagens .titulo-principal {
+        opacity: 1;
+    }
+
+    .titulo-imagens .titulo-hover {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .titulo-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .titulo-item:hover .titulo-principal {
+        opacity: 0;
+    }
+
+    .titulo-item:hover .titulo-hover {
+        opacity: 1;
+    }
 }
 
-.titulo-imagens .titulo-hover {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+/* ------------------------------------------------------------
+   DISPOSITIVOS TOUCH — sem hover, mostra ambas as imagens
+   empilhadas verticalmente. O usuário vê o troféu e a
+   escalação sem precisar interagir.
+   ------------------------------------------------------------ */
+@media (hover: none) {
+    .titulo-hover-label {
+        display: block;
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-text-secondary);
+        background-color: var(--color-surface-muted);
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
 
-.titulo-item:hover .titulo-principal {
-    opacity: 0;
-}
+    .titulo-imagens {
+        display: flex;
+        flex-direction: column;
+    }
 
-.titulo-item:hover .titulo-hover {
-    opacity: 1;
+    .titulo-imagens img {
+        height: 160px;
+        position: static;
+        opacity: 1;
+    }
+
+    .titulo-imagens .titulo-hover {
+        border-top: 2px solid var(--color-surface-muted);
+    }
 }
 
 .titulo-texto {
@@ -70,6 +122,10 @@
 .titulo-texto strong {
     color: var(--color-brand);
 }
+
+/* ------------------------------------------------------------
+   HISTÓRIA — TIMELINE
+   ------------------------------------------------------------ */
 
 .historia-timeline {
     list-style: none;
@@ -103,15 +159,15 @@
     line-height: 1.4;
 }
 
+/* ------------------------------------------------------------
+   RESPONSIVO
+   ------------------------------------------------------------ */
+
 @media (max-width: 768px) {
     .titulos-lista {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: var(--space-5);
         margin-top: var(--space-5);
-    }
-
-    .titulo-imagens {
-        height: 160px;
     }
 
     .titulo-texto {
@@ -124,10 +180,6 @@
     .titulos-lista {
         grid-template-columns: 1fr;
         gap: var(--space-4);
-    }
-
-    .titulo-imagens {
-        height: 200px;
     }
 
     .titulo-item {

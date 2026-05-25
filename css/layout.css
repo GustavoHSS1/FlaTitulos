@@ -22,6 +22,12 @@ section p {
     color: var(--color-text-secondary);
 }
 
+section p,
+section li,
+article p {
+    max-width: 70ch;
+}
+
 @media (max-width: 768px) {
     main {
         padding: var(--space-4);

@@ -5,6 +5,33 @@ body {
     background-color: var(--color-background);
 }
 
+/* ------------------------------------------------------------
+   FOCO POR TECLADO — demanda do cliente (tablet + teclado)
+   ------------------------------------------------------------ */
+
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: var(--border-radius-small);
+}
+
+/* Garante que links e botões dentro da nav também recebam foco visível */
+nav a:focus-visible,
+nav button:focus-visible {
+    outline: 3px solid var(--color-action);
+    outline-offset: 3px;
+    border-radius: var(--border-radius-small);
+}
+
+
+/* ------------------------------------------------------------
+   HEADER
+   ------------------------------------------------------------ */
+
 header {
     background: linear-gradient(135deg, var(--color-header-bg-start, #1a0a0a) 0%, var(--color-header-bg-end, #c41e3a) 100%);
     color: var(--color-white);
@@ -26,6 +53,17 @@ header p {
     color: var(--_color-white);
 }
 
+section p,
+section li,
+article p {
+    max-width: 70ch;
+}
+
+
+/* ------------------------------------------------------------
+   RESPONSIVO — mobile
+   ------------------------------------------------------------ */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: var(--font-size-3xl);
@@ -37,5 +75,16 @@ header p {
 
     header {
         padding: var(--space-8) var(--space-4);
+    }
+}
+
+@media (min-width: 1600px) {
+    :root {
+        --font-size-base: 1.125rem; 
+        --font-size-sm:   1rem;      
+        --font-size-xs:   0.95rem;   
+        --font-size-xl:   1.375rem; 
+        --font-size-2xl:  1.625rem;  
+        --font-size-3xl:  2.25rem;   
     }
 }

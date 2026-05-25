@@ -1,16 +1,17 @@
 :root {
-    /* Tipografia base do sistema */
     --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-size-5xl: 2.5rem;
-    --font-size-3xl: 2rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-xl: 1.25rem;
-    --font-size-base: 1rem;
-    --font-size-sm: 0.95rem;
-    --font-size-xs: 0.9rem;
-    --line-height-base: 1.6;
+
+    --font-size-5xl:  clamp(1.75rem, 5vw,   2.5rem); 
+    --font-size-3xl:  clamp(1.5rem,  3.5vw, 2rem);    
+    --font-size-2xl:  clamp(1.25rem, 2.5vw, 1.5rem);   
+    --font-size-xl:   clamp(1.1rem,  2vw,   1.25rem);  
+    --font-size-base: clamp(1rem,    1.5vw, 1rem);    
+    --font-size-sm:   clamp(0.9rem,  1.2vw, 0.95rem);  
+    --font-size-xs:   clamp(0.85rem, 1vw,   0.9rem);   
+
+    --line-height-base:    1.6;
     --line-height-heading: 1.2;
     --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-bold: 700;
+    --font-weight-medium:  500;
+    --font-weight-bold:    700;
 }
