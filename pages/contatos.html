@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Flamengo - Campeão dos Campeões</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../assets/img/favicon/flamengo-favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Flamengo - Campeão dos Campeões</h1>
+        <p>Entre em contato conosco e faça parte da paixão que une milhões de torcedores.</p>
+    </header>
+
+    <nav>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Abrir menu de navegação" aria-controls="menu-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul id="menu-links" class="menu-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#titulos">Títulos</a></li>
+            <li><a href="../index.html#historia">História</a></li>
+            <li><a href="../index.html#jogadores">Jogadores</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Fale com a Nação</h2>
+            <p>Envie sua mensagem, sugestão ou dúvida. Estamos prontos para receber seu contato e celebrar cada momento do Flamengo com você.</p>
+
+            <div class="contato-grid">
+                <div class="contato-card">
+                    <h3>Informações de contato</h3>
+                    <p>Para atendimento, imprensa e sugestões, utilize os canais abaixo.</p>
+                    <address>
+                        <strong>Central de Atendimento</strong><br>
+                        Rua do Maracanã, 123<br>
+                        Flamengo, Rio de Janeiro - RJ<br>
+                        <br>
+                        Email: <a href="mailto:contato@flamengo.com.br">contato@flamengo.com.br</a><br>
+                        Telefone: <a href="tel:+552100000000">(21) 0000-0000</a><br>
+                        WhatsApp: <a href="https://wa.me/552100000000" target="_blank" rel="noreferrer">+55 21 00000-0000</a>
+                    </address>
+                    <p><strong>Horário de atendimento:</strong><br>Segunda a sexta, das 09:00 às 18:00</p>
+                </div>
+
+                <form class="contato-form" action="#" method="post">
+                    <h3>Envie sua mensagem</h3>
+
+                    <div class="field-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Qual é o assunto?" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Clube de Regatas do Flamengo © 2026</p>
+        <address>Rua do Maracanã, 123 • Rio de Janeiro - RJ</address>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -186,4 +186,75 @@
     .player-name {
         font-size: var(--font-size-base);
     }
+}/* ------------------------------------------------------------
+   P�GINA DE CONTATO
+   ------------------------------------------------------------ */
+.contato-grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 1.2fr) minmax(280px, 0.8fr);
+    gap: var(--space-8);
+    align-items: start;
+    margin-top: var(--space-6);
+}
+
+.contato-card,
+.contato-form {
+    background: var(--color-surface);
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--shadow-default);
+    padding: var(--space-6);
+}
+
+.contato-card h3,
+.contato-form h3 {
+    margin-top: 0;
+    color: var(--_color-brand);
+}
+
+.contato-card p,
+.contato-card address,
+.contato-form label {
+    color: var(--color-text-primary);
+}
+
+.contato-card address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.contato-form .field-group {
+    display: grid;
+    gap: var(--space-4);
+    margin-bottom: var(--space-5);
+}
+
+.contato-form label {
+    font-weight: var(--font-weight-medium);
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: var(--space-4);
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--_color-gray-300);
+    background: var(--_color-white);
+    font: inherit;
+    color: var(--color-text-primary);
+}
+
+.contato-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
 }
